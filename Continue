@@ -1,0 +1,13 @@
+
+# Continue statement
+# Skipping unavailable item in shopping list
+
+shopping_list = ["headphones", "laptop", "jeans", "charger(out of stock)"]
+for i in shopping_list:
+    if "out of stock" in i:
+        continue
+    print(f"buying {i}")
+output:
+buying headphones
+buying laptop
+buying jeans
